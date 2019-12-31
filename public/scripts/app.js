@@ -146,7 +146,7 @@ function renderForecast(card, data) {
  * @return {Object} The weather forecast, if the request fails, return null.
  */
 function getForecastFromNetwork(coords) {
-  return fetch(`https://api.darksky.net/forecast/${coords}`)
+  return fetch(`https://api.darksky.net/forecast/1cf309ece939bc415e7555a8a3cb634d/${coords}`)
       .then((response) => {
         return response.json();
       })
